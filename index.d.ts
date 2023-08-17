@@ -12,7 +12,7 @@ declare module 'react-native-swipeout' {
         disabled?: boolean;
     }
 
-    export interface SwipeoutProperties {
+    export interface SwipeoutProperties extends React.PropsWithChildren {
         autoClose?: boolean;
         backgroundColor?: string;
         close?: boolean;
