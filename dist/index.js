@@ -123,7 +123,7 @@ var Swipeout = (0, _createReactClass2.default)({
     onClose: _propTypes2.default.func,
     right: _propTypes2.default.array,
     scroll: _propTypes2.default.func,
-    style: (_reactNative.ViewPropTypes || _reactNative.View.propTypes).style,
+    style: _propTypes2.default.oneOfType([_propTypes2.default.object, _propTypes2.default.array]),
     sensitivity: _propTypes2.default.number,
     buttonWidth: _propTypes2.default.number,
     disabled: _propTypes2.default.bool
