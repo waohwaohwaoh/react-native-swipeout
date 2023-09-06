@@ -14,7 +14,6 @@ import {
   StyleSheet,
   Text,
   View,
-  ViewPropTypes,
 } from 'react-native';
 
 const SwipeoutBtn = createReactClass({
@@ -106,7 +105,7 @@ const Swipeout = createReactClass({
     onClose: PropTypes.func,
     right: PropTypes.array,
     scroll: PropTypes.func,
-    style: (ViewPropTypes || View.propTypes).style,
+    style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     sensitivity: PropTypes.number,
     buttonWidth: PropTypes.number,
     disabled: PropTypes.bool,
